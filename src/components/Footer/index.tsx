@@ -2,11 +2,17 @@ import { Contact } from '../Contact';
 
 export function Footer() {
   return (
-    <footer className="">
-      <Contact />
+    <footer>
+      <div className="bg-blue-100">
+        <div className="container">
+          <Contact />
+        </div>
+      </div>
 
-      <div className="w-full h-[102px] flex justify-center items-center text-center flex-col">
-        Desenvolvido por Marcelo S Silva <br /> 2023
+      <div className="container">
+        <div className="w-full h-[102px] flex justify-center items-center text-center flex-col bg-white">
+          Desenvolvido por Marcelo S Silva <br /> 2023
+        </div>
       </div>
     </footer>
   );

@@ -5,8 +5,8 @@ import { links } from '../../@helpers/link';
 
 export function Contact() {
   return (
-    <section className="h-[368px] p-16 bg-blue-100">
-      <div className="w-full h-full max-w-6x1 mx-auto grid grid-cols-4">
+    <section className="container">
+      <div className="h-[368px] grid grid-cols-4 py-16">
         <img src={Logo} alt="" />
         <div className="flex flex-col gap-5">
           {links.map(item => (
