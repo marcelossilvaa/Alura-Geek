@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 export function Header() {
   return (
-    <header className="container">
+    <header className="container mx-auto max-w-[72rem]">
       <div className="h-28 flex justify-between items-center">
         <div className="flex items-center gap-8">
           <NavLink to="/">

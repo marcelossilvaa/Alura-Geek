@@ -6,11 +6,11 @@ import pdt5 from '../../../assets/cards/starwars/pdt5.png';
 import pdt6 from '../../../assets/cards/starwars/pdt6.png';
 import { ArrowRight } from 'phosphor-react';
 
-const data = [
+export const dataStarWars = [
   {
     image: pdt1,
     name: 'Produto XYZ',
-    price: 'R$60,00',
+    price: 'R$160,00',
   },
   {
     image: pdt2,
@@ -49,8 +49,8 @@ export function StarWars() {
         </h3>
       </div>
 
-      <div className="flex flex-row justify-between">
-        {data.map((item, index) => (
+      <div className="grid grid-cols-6 gap-4">
+        {dataStarWars.map((item, index) => (
           <div key={index}>
             <img src={item.image} alt="" /> <br />
             <p>{item.name}</p>

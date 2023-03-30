@@ -6,16 +6,16 @@ import pdt5 from '../../../assets/cards/consoles/pdt5.png';
 import pdt6 from '../../../assets/cards/consoles/pdt6.png';
 import { ArrowRight } from 'phosphor-react';
 
-const data = [
+export const dataConsoles = [
   {
     image: pdt1,
     name: 'Produto XYZ',
-    price: 'R$60,00',
+    price: 'R$250,00',
   },
   {
     image: pdt2,
-    name: 'Produto XYZ',
-    price: 'R$60,00',
+    name: 'Playstation 5',
+    price: 'R$660,00',
   },
   {
     image: pdt3,
@@ -49,8 +49,8 @@ export function Consoles() {
         </h3>
       </div>
 
-      <div className="flex flex-row justify-between">
-        {data.map((item, index) => (
+      <div className="grid grid-cols-6 gap-4">
+        {dataConsoles.map((item, index) => (
           <div key={index}>
             <img src={item.image} alt="" /> <br />
             <p>{item.name}</p>

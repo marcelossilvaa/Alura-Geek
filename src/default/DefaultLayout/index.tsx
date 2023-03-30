@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 export function DefaultLayout() {
   return (
-    <div className="w-screen h-screen flex flex-col">
+    <div className="w-screen h-screen flex flex-col overflow-x-hidden">
       <Header />
       <Outlet />
       <Footer />

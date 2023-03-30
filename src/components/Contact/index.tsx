@@ -5,7 +5,7 @@ import { links } from '../../@helpers/link';
 
 export function Contact() {
   return (
-    <section className="container">
+    <section className="container mx-auto max-w-[72rem]">
       <div className="h-[368px] grid grid-cols-4 py-16">
         <img src={Logo} alt="" />
         <div className="flex flex-col gap-5">
@@ -24,7 +24,10 @@ export function Contact() {
               placeholder="Nome"
             />
 
-            <textarea className="h-[82px] rounded px-3 py-4 outline-none"></textarea>
+            <textarea
+              className="h-[82px] rounded px-3 py-4 outline-none resize-none"
+              placeholder="Escreva sua mensagem"
+            ></textarea>
             <Button title="Enviar mensagem" />
           </form>
         </div>

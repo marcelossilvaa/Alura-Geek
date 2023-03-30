@@ -8,7 +8,7 @@ export function Home() {
     <>
       <div>
         <section className="banner">
-          <div className="container">
+          <div className="container mx-auto max-w-[72rem] h-full ">
             <div className="text-white h-full flex flex-col justify-end py-8 gap-4">
               <h1 className="text-xxl font-bold">Dezembro Promocional</h1>
               <h5 className="text-base font-bold">
@@ -19,7 +19,7 @@ export function Home() {
           </div>
         </section>
 
-        <section className="container">
+        <section className="container mx-auto max-w-[72rem]">
           <div className="flex flex-col gap-4 my-8">
             <div>
               <StarWars />

@@ -6,7 +6,7 @@ import pdt5 from '../../../assets/cards/diversos/pdt5.png';
 import pdt6 from '../../../assets/cards/diversos/pdt6.png';
 import { ArrowRight } from 'phosphor-react';
 
-const data = [
+export const dataDiversos = [
   {
     image: pdt1,
     name: 'Produto XYZ',
@@ -49,8 +49,8 @@ export function Diversos() {
         </h3>
       </div>
 
-      <div className="flex flex-row justify-between">
-        {data.map((item, index) => (
+      <div className="grid grid-cols-6 gap-4">
+        {dataDiversos.map((item, index) => (
           <div key={index}>
             <img src={item.image} alt="" /> <br />
             <p>{item.name}</p>
