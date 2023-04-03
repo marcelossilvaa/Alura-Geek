@@ -1,6 +1,6 @@
 interface ButtonProps {
-  title: string;
-  variant?: boolean; //altera a configurração(style) do botão
+  title: string
+  variant?: boolean // altera a configurração(style) do botão
 }
 
 export function Button({ title, variant }: ButtonProps) {
@@ -15,5 +15,5 @@ export function Button({ title, variant }: ButtonProps) {
     >
       {title}
     </button>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import Logo from '../../assets/Logo.png';
-import { MagnifyingGlass } from 'phosphor-react';
-import { Button } from '../Button';
-import { NavLink } from 'react-router-dom';
+import Logo from '../../assets/Logo.png'
+import { MagnifyingGlass } from 'phosphor-react'
+import { Button } from '../Button'
+import { NavLink } from 'react-router-dom'
 
 export function Header() {
   return (
@@ -27,5 +27,5 @@ export function Header() {
         </NavLink>
       </div>
     </header>
-  );
+  )
 }

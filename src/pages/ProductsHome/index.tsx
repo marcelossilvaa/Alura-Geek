@@ -1,12 +1,12 @@
-import { Button } from '../../components/Button';
-import { dataStarWars } from '../../components/Cards/StarWars';
-import { dataConsoles } from '../../components/Cards/Consoles';
-import { dataDiversos } from '../../components/Cards/Diversos';
-import { Trash, Pencil } from 'phosphor-react';
-import { NavLink } from 'react-router-dom';
+import { Button } from '../../components/Button'
+import { dataStarWars } from '../../components/Cards/StarWars'
+import { dataConsoles } from '../../components/Cards/Consoles'
+import { dataDiversos } from '../../components/Cards/Diversos'
+import { Trash, Pencil } from 'phosphor-react'
+import { NavLink } from 'react-router-dom'
 
 export function ProductsHome() {
-  const allProducts = dataStarWars.concat(dataConsoles, dataDiversos);
+  const allProducts = dataStarWars.concat(dataConsoles, dataDiversos)
   return (
     <>
       <section className="bg-[#E5E5E5] py-16">
@@ -35,5 +35,5 @@ export function ProductsHome() {
         </div>
       </section>
     </>
-  );
+  )
 }

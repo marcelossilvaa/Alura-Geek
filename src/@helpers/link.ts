@@ -23,4 +23,4 @@ export const links = [
     link: '#',
     title: 'Quem somos nós',
   },
-];
+]

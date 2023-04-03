@@ -1,7 +1,7 @@
-import { Button } from '../../components/Button';
-import { StarWars } from '../../components/Cards/StarWars';
-import { Consoles } from '../../components/Cards/Consoles';
-import { Diversos } from '../../components/Cards/Diversos';
+import { Button } from '../../components/Button'
+import { StarWars } from '../../components/Cards/StarWars'
+import { Consoles } from '../../components/Cards/Consoles'
+import { Diversos } from '../../components/Cards/Diversos'
 
 export function Home() {
   return (
@@ -34,5 +34,5 @@ export function Home() {
         </section>
       </div>
     </>
-  );
+  )
 }

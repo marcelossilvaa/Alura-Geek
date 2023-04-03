@@ -1,10 +1,10 @@
-import pdt1 from '../../../assets/cards/consoles/pdt1.png';
-import pdt2 from '../../../assets/cards/consoles/pdt2.png';
-import pdt3 from '../../../assets/cards/consoles/pdt3.png';
-import pdt4 from '../../../assets/cards/consoles/pdt4.png';
-import pdt5 from '../../../assets/cards/consoles/pdt5.png';
-import pdt6 from '../../../assets/cards/consoles/pdt6.png';
-import { ArrowRight } from 'phosphor-react';
+import pdt1 from '../../../assets/cards/consoles/pdt1.png'
+import pdt2 from '../../../assets/cards/consoles/pdt2.png'
+import pdt3 from '../../../assets/cards/consoles/pdt3.png'
+import pdt4 from '../../../assets/cards/consoles/pdt4.png'
+import pdt5 from '../../../assets/cards/consoles/pdt5.png'
+import pdt6 from '../../../assets/cards/consoles/pdt6.png'
+import { ArrowRight } from 'phosphor-react'
 
 export const dataConsoles = [
   {
@@ -37,7 +37,7 @@ export const dataConsoles = [
     name: 'Produto XYZ',
     price: 'R$60,00',
   },
-];
+]
 
 export function Consoles() {
   return (
@@ -62,5 +62,5 @@ export function Consoles() {
         ))}
       </div>
     </div>
-  );
+  )
 }

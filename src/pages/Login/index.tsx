@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [msgEmail, setMsgEmail] = useState('');
-  const [msgPassword, setMsgPassword] = useState('');
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [msgEmail, setMsgEmail] = useState('')
+  const [msgPassword, setMsgPassword] = useState('')
 
   return (
     <>
@@ -19,8 +19,8 @@ export function Login() {
                 placeholder="Escreva seu email"
                 className="w-[423px] h-[63.13px] p-3"
                 value={email}
-                onChange={e => {
-                  setEmail(e.target.value);
+                onChange={(e) => {
+                  setEmail(e.target.value)
                 }}
               />
               <div className="text-red-700 text-sm">{msgEmail}</div>
@@ -29,8 +29,8 @@ export function Login() {
                 placeholder="Escreva sua senha"
                 className="w-[423px] h-[63.13px] p-3 "
                 value={password}
-                onChange={e => {
-                  setPassword(e.target.value);
+                onChange={(e) => {
+                  setPassword(e.target.value)
                 }}
               />
               <div className="text-red-700 text-sm">{msgPassword}</div>
@@ -43,16 +43,16 @@ export function Login() {
                 }
                 onClick={() => {
                   if (email === '') {
-                    setMsgEmail('Preencha o email');
-                    return false;
+                    setMsgEmail('Preencha o email')
+                    return false
                   }
                   if (password === '') {
-                    setMsgPassword('Preencha a senha');
-                    return false;
+                    setMsgPassword('Preencha a senha')
+                    return false
                   }
-                  setMsgEmail('');
-                  setMsgPassword('');
-                  <NavLink to="/productshome" />;
+                  setMsgEmail('')
+                  setMsgPassword('')
+                  ;<NavLink to="/productshome" />
                 }}
               >
                 Entrar
@@ -62,5 +62,5 @@ export function Login() {
         </div>
       </section>
     </>
-  );
+  )
 }
