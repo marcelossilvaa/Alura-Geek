@@ -1,10 +1,10 @@
-import pdt1 from '../../../assets/cards/starwars/pdt1.png'
-import pdt2 from '../../../assets/cards/starwars/pdt2.png'
-import pdt3 from '../../../assets/cards/starwars/pdt3.png'
-import pdt4 from '../../../assets/cards/starwars/pdt4.png'
-import pdt5 from '../../../assets/cards/starwars/pdt5.png'
-import pdt6 from '../../../assets/cards/starwars/pdt6.png'
-import { ArrowRight } from 'phosphor-react'
+import pdt1 from '../../../assets/cards/starwars/pdt1.png';
+import pdt2 from '../../../assets/cards/starwars/pdt2.png';
+import pdt3 from '../../../assets/cards/starwars/pdt3.png';
+import pdt4 from '../../../assets/cards/starwars/pdt4.png';
+import pdt5 from '../../../assets/cards/starwars/pdt5.png';
+import pdt6 from '../../../assets/cards/starwars/pdt6.png';
+import { ArrowRight } from 'phosphor-react';
 
 export const dataStarWars = [
   {
@@ -37,7 +37,7 @@ export const dataStarWars = [
     name: 'Produto XYZ',
     price: 'R$60,00',
   },
-]
+];
 
 export function StarWars() {
   return (
@@ -62,5 +62,5 @@ export function StarWars() {
         ))}
       </div>
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import { Contact } from '../Contact'
+import { Contact } from '../Contact';
 
 export function Footer() {
   return (
@@ -15,5 +15,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import Logo from '../../assets/Logo.png'
-import { Button } from '../Button'
-import { Link } from './Link'
-import { links } from '../../@helpers/link'
+import Logo from '../../assets/Logo.png';
+import { Button } from '../Button';
+import { Link } from './Link';
+import { links } from '../../@helpers/link';
 
 export function Contact() {
   return (
@@ -9,8 +9,8 @@ export function Contact() {
       <div className="h-[368px] grid grid-cols-4 py-16">
         <img src={Logo} alt="" />
         <div className="flex flex-col gap-5">
-          {links.map((item) => (
-            <Link key={item.title} link={item.link} title={item.title} />
+          {links.map(item => (
+            <Link key={item.id} link={item.link} title={item.title} />
           ))}
         </div>
 
@@ -33,5 +33,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

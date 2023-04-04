@@ -1,12 +1,12 @@
-import { Button } from '../../components/Button'
-import { dataStarWars } from '../../components/Cards/StarWars'
-import { dataConsoles } from '../../components/Cards/Consoles'
-import { dataDiversos } from '../../components/Cards/Diversos'
-import { Trash, Pencil } from 'phosphor-react'
-import { NavLink } from 'react-router-dom'
+import { Button } from '../../components/Button';
+import { dataStarWars } from '../../components/Cards/StarWars';
+import { dataConsoles } from '../../components/Cards/Consoles';
+import { dataDiversos } from '../../components/Cards/Diversos';
+import { Trash, Pencil } from 'phosphor-react';
+import { NavLink } from 'react-router-dom';
 
 export function ProductsHome() {
-  const allProducts = dataStarWars.concat(dataConsoles, dataDiversos)
+  const allProducts = dataStarWars.concat(dataConsoles, dataDiversos);
   return (
     <>
       <section className="bg-[#E5E5E5] py-16">
@@ -21,11 +21,15 @@ export function ProductsHome() {
           <div className="grid grid-cols-6 gap-4">
             {allProducts.map((item, index) => (
               <div key={index}>
-                <div className="mb-2">
-                  <Trash size={24} />
-                  <Pencil size={24} />
-                  <img src={item.image} alt="" />
+                <div className="flex mb-2 relative top-10 justify-end gap-2">
+                  <button>
+                    <Trash size={24} />
+                  </button>
+                  <button>
+                    <Pencil size={24} />
+                  </button>
                 </div>
+                <img src={item.image} alt="" />
                 <p>{item.name}</p>
                 <p className="font-bold">{item.price}</p>
                 <p className="text-sm">#111111</p>
@@ -35,5 +39,5 @@ export function ProductsHome() {
         </div>
       </section>
     </>
-  )
+  );
 }

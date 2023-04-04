@@ -1,10 +1,10 @@
-import pdt1 from '../../../assets/cards/diversos/pdt1.png'
-import pdt2 from '../../../assets/cards/diversos/pdt2.png'
-import pdt3 from '../../../assets/cards/diversos/pdt3.png'
-import pdt4 from '../../../assets/cards/diversos/pdt4.png'
-import pdt5 from '../../../assets/cards/diversos/pdt5.png'
-import pdt6 from '../../../assets/cards/diversos/pdt6.png'
-import { ArrowRight } from 'phosphor-react'
+import pdt1 from '../../../assets/cards/diversos/pdt1.png';
+import pdt2 from '../../../assets/cards/diversos/pdt2.png';
+import pdt3 from '../../../assets/cards/diversos/pdt3.png';
+import pdt4 from '../../../assets/cards/diversos/pdt4.png';
+import pdt5 from '../../../assets/cards/diversos/pdt5.png';
+import pdt6 from '../../../assets/cards/diversos/pdt6.png';
+import { ArrowRight } from 'phosphor-react';
 
 export const dataDiversos = [
   {
@@ -37,7 +37,7 @@ export const dataDiversos = [
     name: 'Produto XYZ',
     price: 'R$60,00',
   },
-]
+];
 
 export function Diversos() {
   return (
@@ -62,5 +62,5 @@ export function Diversos() {
         ))}
       </div>
     </div>
-  )
+  );
 }
