@@ -41,7 +41,7 @@ export const dataDiversos = [
 
 export function Diversos() {
   return (
-    <div>
+    <div className="container mx-auto max-w-[95%] h-full lg:max-w-[72rem]">
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold">Diversos</h1>
         <h3 className="text-blue-500 font-bold flex flex-row items-center gap-1">
@@ -49,7 +49,7 @@ export function Diversos() {
         </h3>
       </div>
 
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-3 gap-4 sm:grid-cols-6">
         {dataDiversos.map((item, index) => (
           <div key={index}>
             <img src={item.image} alt="" /> <br />

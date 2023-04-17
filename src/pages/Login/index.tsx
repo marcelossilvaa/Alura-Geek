@@ -21,16 +21,19 @@ export function Login() {
   return (
     <>
       <section className="bg-[#E5E5E5]">
-        <div className="container mx-auto max-w-[72rem] h-[474px] flex items-center justify-center">
+        <div className="container mx-auto max-w-[72rem] h-[600px] flex items-center justify-center sm:h-[474px]">
           <div className="flex items-center justify-center flex-col gap-4">
             <h1 className="text-lg font-bold">Iniciar Sessão</h1>
 
-            <form onSubmit={handleSubmit} className="gap-3 flex flex-col">
+            <form
+              onSubmit={handleSubmit}
+              className="gap-3 flex flex-col items-center"
+            >
               <input
                 required
                 type="email"
                 placeholder="Escreva seu email"
-                className="w-[423px] h-[63.13px] p-3"
+                className="w-[300px] h-[63.13px] p-3 sm:w-[423px]"
                 value={email}
                 onChange={handleEmailChange}
               />
@@ -40,13 +43,13 @@ export function Login() {
                 maxLength={8}
                 type="password"
                 placeholder="Escreva sua senha"
-                className="w-[423px] h-[63.13px] p-3 "
+                className="w-[300px] h-[63.13px] p-3 sm:w-[423px]"
                 value={password}
                 onChange={handlePasswordChange}
               />
               <button
                 className={
-                  'w-[423px] h-[63.13px] p-4 transition duration-150 bg-blue-500  text-white hover:bg-blue-200'
+                  'w-[300px] h-[63.13px] p-4 transition duration-150 bg-blue-500  text-white hover:bg-blue-200 sm:w-[423px]'
                 }
               >
                 Entrar
