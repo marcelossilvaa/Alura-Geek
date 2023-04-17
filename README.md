@@ -35,7 +35,7 @@ Prerequisites: npm
 # clone repository
 git clone https://github.com/marcelossilvaa/Alura-Geek
 # enter the project folder
-cd front-web
+cd Alura-Geek
 # install dependencies
 npm install
 # run the project
