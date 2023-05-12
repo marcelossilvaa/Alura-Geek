@@ -1,6 +1,6 @@
 import Logo from '../../assets/Logo.png';
 import { Button } from '../Button';
-import { Link } from './Link';
+import { Link } from './Links';
 import { links } from '../../@helpers/link';
 
 export function Contact() {

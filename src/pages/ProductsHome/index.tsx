@@ -1,7 +1,7 @@
 import { Button } from '../../components/Button';
-import { dataStarWars } from '../../components/Cards/StarWars';
-import { dataConsoles } from '../../components/Cards/Consoles';
-import { dataDiversos } from '../../components/Cards/Diversos';
+import { dataStarWars } from '../../@helpers/dataProducts';
+import { dataConsoles } from '../../@helpers/dataProducts';
+import { dataDiversos } from '../../@helpers/dataProducts';
 import { Trash, Pencil } from 'phosphor-react';
 import { NavLink } from 'react-router-dom';
 

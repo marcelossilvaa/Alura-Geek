@@ -1,7 +1,5 @@
 import { Button } from '../../components/Button';
-import { StarWars } from '../../components/Cards/StarWars';
-import { Consoles } from '../../components/Cards/Consoles';
-import { Diversos } from '../../components/Cards/Diversos';
+import { ProductsComponent } from '../../components/ProductsComponent';
 
 export function Home() {
   return (
@@ -23,15 +21,9 @@ export function Home() {
 
         <section className="container mx-auto max-w-[72rem]">
           <div className="flex flex-col gap-4 my-8">
-            <div>
-              <StarWars />
-            </div>
-            <div>
-              <Consoles />
-            </div>
-            <div>
-              <Diversos />
-            </div>
+            <ProductsComponent title={'StarWars'} />
+            <ProductsComponent title={'Consoles'} />
+            <ProductsComponent title={'Diversos'} />
           </div>
         </section>
       </div>
