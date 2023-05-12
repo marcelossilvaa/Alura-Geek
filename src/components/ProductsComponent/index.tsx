@@ -8,9 +8,16 @@ interface PcProps {
   title: string;
 }
 
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  description: string;
+  image: string;
+}
+
 export function ProductsComponent({ title }: PcProps) {
-  //@ts-ignore
-  let selectedData = [];
+  let selectedData: Product[] = [];
 
   if (title.includes('StarWars')) {
     selectedData = dataStarWars;
