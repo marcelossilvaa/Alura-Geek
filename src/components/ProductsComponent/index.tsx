@@ -40,22 +40,22 @@ export function ProductsComponent({ title }: PcProps) {
 
       <div className="grid grid-cols-3 gap-4 sm:grid-cols-6">
         {selectedData.map(item => (
-          <div key={item.id}>
-            <img src={item.image} alt="" /> <br />
-            <p>{item.name}</p>
-            <p className="font-bold">{item.price}</p>
-            <p className="text-blue-500 font-bold cursor-pointer">
-              <Link
-                to={`/productpage?id=${item.id}&name=${item.name}&price=${
-                  item.price
-                }&description=${item.description}&image=${encodeURIComponent(
-                  item.image
-                )}`}
-              >
+          <Link
+            to={`/productpage?id=${item.id}&name=${item.name}&price=${
+              item.price
+            }&description=${item.description}&image=${encodeURIComponent(
+              item.image
+            )}`}
+          >
+            <div key={item.id}>
+              <img src={item.image} alt="" /> <br />
+              <p>{item.name}</p>
+              <p className="font-bold">{item.price}</p>
+              <p className="text-blue-500 font-bold cursor-pointer">
                 Ver produto
-              </Link>
-            </p>
-          </div>
+              </p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
