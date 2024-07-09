@@ -12,7 +12,7 @@ export function Home() {
                 Dezembro Promocional
               </h1>
               <h5 className="text-base font-bold">
-                Produtos selecionados com 33% de desconto
+                Produtos selecionados com 50% de desconto
               </h5>
               <Button variant={false} title="Ver consoles" />
             </div>
