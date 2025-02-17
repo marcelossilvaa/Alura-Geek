@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer>
       <div className="bg-blue-100">
-        <div className="container mx-auto max-w-[95%] h-full lg:max-w-[72rem]">
+        <div className="container mx-auto max-w-[95%] lg:w-[72rem]">
           <Contact />
         </div>
       </div>

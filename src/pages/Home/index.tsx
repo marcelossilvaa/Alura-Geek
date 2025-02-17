@@ -6,8 +6,8 @@ export function Home() {
     <>
       <div>
         <section className="banner">
-          <div className="container mx-auto max-w-[95%] h-full lg:max-w-[72rem]">
-            <div className="text-white h-full flex flex-col justify-end py-8  gap-1 sm:gap-4">
+          <div className="container mx-auto max-w-[95%] lg:w-[72rem]">
+            <div className="text-white h-full flex flex-col justify-center py-8  gap-1 sm:gap-4" style={{ textShadow: '2px 2px 8px black' }}>
               <h1 className="text-xl font-bold sm:text-xxl">
                 Dezembro Promocional
               </h1>

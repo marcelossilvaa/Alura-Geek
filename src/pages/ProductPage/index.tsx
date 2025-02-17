@@ -13,7 +13,7 @@ export function ProductPage() {
   const image = searchParams.get('image');
 
   return (
-    <section className="container mx-auto max-w-[95%] h-full lg:max-w-[72rem]">
+    <section className="container mx-auto max-w-[95%] lg:w-[72rem]">
       <div className="flex flex-col sm:flex-row gap-4 m-4">
         <img
           src={image ? decodeURIComponent(image) : ''}

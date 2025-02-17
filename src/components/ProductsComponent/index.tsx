@@ -28,7 +28,7 @@ export function ProductsComponent({ title }: PcProps) {
   }
 
   return (
-    <div className="container mx-auto max-w-[95%] h-full lg:max-w-[72rem]">
+    <div className="container mx-auto max-w-[95%] lg:w-[72rem]">
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold">{title}</h1>
         <h3 className="text-blue-500 font-bold flex flex-row items-center gap-1">
