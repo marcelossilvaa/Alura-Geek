@@ -6,11 +6,11 @@ interface ButtonProps {
 export function Button({ title, variant }: ButtonProps) {
   return (
     <button
-      className={`h-[51px] w-[181px] flex items-center justify-center p-4 border transition duration-150
+      className={`h-[51px] w-[181px] rounded flex items-center justify-center p-4 border transition duration-150 font-medium
     ${
       variant
-        ? 'border-blue-500 text-blue-500 hover:bg-blue-100 '
-        : 'border-blue-500 bg-blue-500 text-white hover:bg-blue-200'
+        ? 'border-blue-500 text-blue-500 hover:bg-blue-50'
+        : 'border-blue-500 bg-blue-500 text-white hover:bg-blue-600 shadow-md hover:shadow-lg'
     }`}
     >
       {title}

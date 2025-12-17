@@ -13,17 +13,17 @@ export function Header() {
           </NavLink>
 
           <input
-            className="w-32 h-10 bg-gray-100 outline-none border-none rounded-[20px] px-4 py-2  placeholder-transparent sm:w-96 sm:font-thin sm:placeholder-gray-400"
+            className="w-32 h-10 bg-gray-100 outline-none border-none rounded-[20px] px-4 py-2 placeholder-transparent transition-all duration-300 focus:ring-2 focus:ring-blue-200 focus:bg-white sm:w-96 sm:font-thin sm:placeholder-gray-400"
             type="text"
             placeholder="O que deseja encontrar?"
           />
           <MagnifyingGlass
-            className="cursor-pointer relative right-6 text-gray-200 sm:right-16"
+            className="cursor-pointer relative right-6 text-gray-200 sm:right-16 hover:text-blue-500 transition-colors"
             size={17}
           />
         </div>
         <NavLink to="/login">
-          <button className="h-[51px] w-[100px] flex items-center justify-center p-4 border transition duration-150 border-blue-500 text-blue-500 hover:bg-blue-100 sm:w-[181px]">
+          <button className="h-[40px] w-[100px] rounded flex items-center justify-center border transition duration-150 border-blue-500 text-blue-500 font-semibold hover:bg-blue-500 hover:text-white sm:w-[120px]">
             Login
           </button>
         </NavLink>
